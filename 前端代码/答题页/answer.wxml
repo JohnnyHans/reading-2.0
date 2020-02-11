@@ -1,0 +1,42 @@
+<!--pages/answer/answer.wxml-->
+<view class="answerboard">
+  <view class="answer-bg"></view>
+    <view class="top_item">
+      <view  class="measrue_board">{{measrue}}</view>
+      <view class="second" bindtap="questionStart">{{second}}</view>
+      <view class="count_scoring">
+        <view class="count">得分：{{score}}</view>
+        <view class="scoring">{{current+1}}/{{total}}</view>
+      </view>
+    </view>
+    
+    
+    <view class="question" data-id="{{bookq}}">第{{current+1}}题 : {{bookq[current].que}}</view>
+    <view>{{bookq[current].content}}</view>
+
+    <view class="answerbox" bindtap='answer' data-id="1">
+      <view wx:if="{{isCorrect==false&&currentAnswer==1}}"></view>
+      <!-- <image wx:if="{{isCorrect==false&&currentAnswer==1}}" src='/resoures/answer_sheet/wrong.png'></image> -->
+      <!-- <image wx:if="{{correctAnswer==1}}" src='/resoures/answer_sheet/correct.png'></image> -->
+      <view wx:if="{{correctAnswer==1}}"></view>
+      <view class='option-word'>{{bookq[current].optiona}}</view>
+    </view>
+    <view class="answerbox" bindtap='answer' data-id='2'>
+      <image wx:if="{{isCorrect==false&&currentAnswer==2}}"  src='/resoures/answer_sheet/wrong.png'></image>
+      <image wx:if="{{correctAnswer==2}}" src='/resoures/answer_sheet/correct.png'></image>
+      <view class='option-word'>{{bookq[current].optionb}}</view>
+    </view>
+    <view class="answerbox" bindtap='answer' data-id='3'>
+      <image wx:if="{{isCorrect==false&&currentAnswer==3}}"  src='/resoures/answer_sheet/wrong.png'></image>
+      <image wx:if="{{correctAnswer==3}}" src='/resoures/answer_sheet/correct.png'></image>
+      <view class='option-word'>{{bookq[current].optionc}}</view>
+    </view>
+    <view class="answerbox" bindtap='answer' data-id='4'>
+      <image wx:if="{{isCorrect==false&&currentAnswer==4}}"  src='/resoures/answer_sheet/wrong.png'></image>
+      <image wx:if="{{correctAnswer==4}}" src='/resoures/answer_sheet/correct.png'></image>
+      <view class='option-word'>{{bookq[current].optiond}}</view>
+    </view>
+    <!-- <view wx:if="{{hasNext==true}}" bindtap='next' class='next'>下一题</view> -->
+    <view bindtap='next' class='next'>下一题</view>
+
+</view>
