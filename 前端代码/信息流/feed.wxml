@@ -1,0 +1,7 @@
+<!--pages/feed/feed.wxml-->
+
+ <view class="container">
+ <block wx:for='{{feedList}}' wx:key='*this'>
+  <view class='feed' bindtap="goWeb" data-id="{{item.id}}" data-url="{{item.url}}">{{item.tit}}</view>
+ </block>
+ </view>

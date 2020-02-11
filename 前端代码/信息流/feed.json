@@ -1,0 +1,9 @@
+{
+    "navigationBarBackgroundColor":"#FFFFFF",
+    "navigationBarTextStyle":"black",
+    "navigationBarTitleText":"资讯阅读",
+    "navigationStyle":"default",
+    "enablePullDownRefresh":true,
+    "disableScroll":false,
+    "usingComponents":{}
+}
