@@ -1,0 +1,27 @@
+<!--index.wxml-->
+<!-- <text>banner</text> -->
+<swiper indicator-dots="{{indicatorDots}}" 
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="circular" bindtap='bannerClick'>
+        <block wx:for="{{top_banner}}" wx:key="*this">
+          <swiper-item>
+            <view class="swiper-item" >
+            <image src="{{item.img}}" data-url='{{item.url}}' />
+            </view>
+          </swiper-item>
+        </block>
+</swiper>
+
+<!-- <text>中间按钮</text> -->
+<view class="iconbtn">
+    <image src='/resoures/icon_index/index_btn_icon/icon_btn_booktest@2x.png' class="booktest-img"  bindtap="goBooktest"></image>
+    <image src='/resoures/icon_index/index_btn_icon/icon_btn_knowledge@2x.png' class='knowledge-img' bindtap="goContest"></image>
+    <image src='/resoures/icon_index/index_btn_icon/icon_btn_zan@2x.png'  class='zan-img' bindtap="goDianzan"></image>
+</view>
+
+<!-- <text>信息流</text> -->
+<view class="feed">
+<block wx:for='{{feedlist}}' wx:key='*this'>
+  <view class='feed1' data-id='{{item.id}}' data-url='{{item.url}}' bindtap="newsClick">{{item.tit}}</view>
+  </block>
+  <image src='/resoures/icon_index/icon_more_btn.png' class='feed_more' bindtap="goFeed"></image>
+</view>
