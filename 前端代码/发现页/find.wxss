@@ -1,0 +1,111 @@
+/* pages/find/find.wxss */
+.container_line1{
+  display:inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content:space-around;
+  flex-wrap: wrap;
+  width: 700rpx;
+  height: 200rpx;
+  margin-top:30rpx;
+  margin-left: 27rpx;
+  /*background-color: #dfdfdf9a;*/
+}
+
+.discovery_bgline{
+  position: absolute;
+  width: 622rpx;
+  height: 594rpx;
+  margin-left: 62rpx;
+  margin-top: 30px;
+}
+
+.leadership{
+  position: relative;
+  width: 130rpx;
+  height: 130rpx;
+}
+.bookstore{
+  position: relative;
+  width: 130rpx;
+  height: 130rpx;
+}
+.learn_outside{
+  position: relative;
+  width: 130rpx;
+  height: 130rpx;
+}
+
+.container_line2{
+  display:inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content:space-around;
+  flex-wrap: wrap;
+  width: 700rpx;
+  height: 200rpx;
+  margin-top:16px;
+  margin-left: 27rpx;
+  /*background-color: #dfdfdf9a;*/
+}
+.stuspy{
+  position: relative;
+  width: 130rpx;
+  height: 130rpx;
+}
+.listen{
+  position: relative;
+  width: 130rpx;
+  height: 130rpx;
+}
+.sjgg{
+  position: relative;
+  width: 130rpx;
+  height: 130rpx;
+}
+
+.container_line3{
+  display:inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content:space-around;
+  flex-wrap: wrap;
+  width: 700rpx;
+  height: 200rpx;
+  margin-top:20px;
+  margin-left: 27rpx;
+}
+
+.flcj{
+  position: relative;
+  width: 130rpx;
+  height: 130rpx;
+}
+.listen1{
+  position: relative;
+  width: 130rpx;
+  height: 130rpx;
+}
+.sjgg1{
+  position: relative;
+  width: 130rpx;
+  height: 130rpx;
+}
+
+.container1{
+  display:inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content:space-around ;
+  width: 700rpx;
+  height: 10rpx;
+  margin-top:60rpx;
+  margin-left: 27rpx;
+  /* background-color: #dfdfdf9a; */
+}
+
+.discovery_ad{
+  position: relative;
+  width: 700rpx;
+  height: 380rpx;
+}

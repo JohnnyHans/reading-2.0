@@ -1,0 +1,23 @@
+<!--pages/find/find.wxml-->
+<image src='/resoures/icon_discovery/discovery_bgline.png' class="discovery_bgline"></image>
+<view class="container_line1">
+  <image src='/resoures/icon_discovery/icon_discover_list@2x.png' class="leadership" bindtap="rankList"></image>
+  <image src='/resoures/icon_discovery/icon_bookstore@2x.png' class="bookstore"></image>
+  <image src='/resoures/icon_discovery/icon_learn_outside@2x.png' class="learn_outside"></image>
+</view>
+<view class="container_line2">
+  <image src='/resoures/icon_discovery/icon_stuspy@2x.png' class="stuspy"></image>
+  <image src='/resoures/icon_discovery/icon_listen@2x.png' class="listen"></image>
+  <image src='/resoures/icon_discovery/icon_sjgg@2x.png ' class="sjgg"></image>
+</view>
+<view class="container_line3">  
+  <image src='/resoures/icon_discovery/icon_flcj@2x.png' class="flcj"></image>
+  <image src='/resoures/icon_discovery/icon_flcj@2x.png' class="listen1"></image>
+  <image src='/resoures/icon_discovery/icon_sjgg@2x.png ' class="sjgg1"></image>
+</view>
+
+<view class="container1">
+  <!-- <image src='/resoures/icon_discovery/discovery_ad.png' class="discovery_ad"></image> -->
+</view>
+
+<ad unit-id="adunit-fc7c4378c5cbd277" ad-type="video" ad-theme="white"></ad>
