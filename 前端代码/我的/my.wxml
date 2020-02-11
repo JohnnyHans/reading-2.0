@@ -1,0 +1,86 @@
+<!--pages/my/my.wxml-->
+  <view class="first">
+    <view class='my_board'></view>
+    <button open-type="getUserInfo" class="gui" bindgetuserinfo="bindGetUserInfo">点击展示头像
+    <!-- <image src='/resoures/icon_my/my_head.png'  class="my_head"></image> -->
+    </button>
+    <view class="rank">
+    <view class="rank-content">排 名</view>
+    <view class="rank-content">得 分</view>
+    </view>
+    <view class="count">
+    <view class="queue">{{num}}</view>
+    <view class="score">{{num}}</view>
+    </view>
+  </view>
+    <view class="my_midhook"></view>
+    <view class="my_tboard">
+
+    <!-- <view>绑定点点阅读网</view> -->
+
+    <button class="tboard_item" bindtap="goBind">
+        <view class="left">
+         <image class="tboard_icon" src="/resoures/icon_my/icon_my_link@3x.png"></image>
+         <view class="tboard_content">绑定点点阅读网</view>
+        </view>
+        <view class="right">
+          <image class="tboard_click" src="/resoures/icon_my/my_tboard_tclick4@2x.png"></image>
+          <image class="tboard_click" src="/resoures/icon_my/my_tboard_tclick4@2x.png"></image>
+        </view>
+      </button>
+
+    <!-- <view>邀请好友</view> -->
+
+      <button class="tboard_item" open-type="share">
+        <view class="left">
+        <image class="tboard_icon" src="/resoures/icon_my/icon_my_invite@3x.png"></image>
+        <view class="tboard_content">邀请好友</view>
+        </view>
+        <view class="right">
+        <image class="tboard_click" src="/resoures/icon_my/my_tboard_tclick4@2x.png"></image>
+        <image class="tboard_click" src="/resoures/icon_my/my_tboard_tclick4@2x.png"></image>
+        </view>
+      </button>
+
+    <!-- <view>关于悦读王者</view> -->
+    
+      <view class="action" bindtap="showModal" data-target="Image">
+      <button class="tboard_item">
+        <view class="left">
+          <image class="tboard_icon"        src="/resoures/icon_my/icon_my_about@3x.png"></image>
+          <view class="tboard_content">关于悦读王者</view>
+        </view>
+        <view class="right">
+          <image class="tboard_click" src="/resoures/icon_my/my_tboard_tclick4@2x.png"></image>
+          <image class="tboard_click" src="/resoures/icon_my/my_tboard_tclick4@2x.png"></image>
+        </view>
+        </button>
+      </view>
+
+      <view class="cu-modal {{modalName=='Image'?'show':''}}">
+      <view class="cu-dialog">
+      <view class="bg-img" style="background-image: url('https://ossweb-img.qq.com/images/lol/web201310/skin/big91012.jpg');height:600px;">
+      <view class="cu-bar justify-end text-white">
+        <view class="action" bindtap="hideModal">
+          <text class="cuIcon-close "></text>
+        </view>
+      </view>
+      </view>
+      </view>
+      </view>
+      
+    <!-- <view>帮助与反馈</view> -->
+
+      <button class="tboard_item" bindtap="goHelp">
+        <view class="left">
+        <image class="tboard_icon" src="/resoures/icon_my/icon_my_help@3x.png"></image>
+        <view class="tboard_content">帮助与反馈</view>
+        </view>
+        <view class="right">
+          <image class="tboard_click" src="/resoures/icon_my/my_tboard_tclick4@2x.png"></image>
+          <image class="tboard_click" src="/resoures/icon_my/my_tboard_tclick4@2x.png"></image>
+        </view>
+      </button>
+
+    <view class="comp">点阅科技出品</view>
+    </view>
