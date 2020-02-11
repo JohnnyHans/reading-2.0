@@ -1,0 +1,53 @@
+<!--pages/contest_info/contest_info.wxml-->
+
+<view class="infomation_bg">
+  <view class="tit">信息填写</view>
+
+  <form bindsubmit="formSubmit">
+  <view class="name">
+  <view class="location">
+		<!-- <view class="title">地址选择</view> -->
+		<picker mode="region" bindchange="RegionChange" value="{{region}}" custom-item="{{customItem}}">
+			<view class="picker">
+				{{region[0]}}，{{region[1]}}，{{region[2]}}
+			</view>
+		</picker>
+	</view>
+    
+    <input class="student_name" placeholder="学校全称"></input>
+    <input class="school_name" placeholder="学生姓名"></input>
+  </view>
+
+  <view class="level_class">
+    <view class="level">
+      <picker mode="selector" bindchange="bindPickerChange" value="{{index}}" range="{{level}}">
+        <view class="picker">{{level[index]}}</view>
+      </picker>
+    </view>
+
+    <view class="class">
+      <picker mode="selector" bindchange="bindPickerChang" value="{{range}}" range="{{classn}}">
+        <view class="picker">{{classn[range]}}</view>
+      </picker>
+    </view>
+  </view>
+
+  <button form-type="submit" class="submit" bindtap="goChoice">提 交</button>
+  </form>
+
+  <view class="action law" bindtap="showModal" data-target="Image">
+    *知识竞赛规则*
+  </view>
+  <view class="cu-modal {{modalName=='Image'?'show':''}}">
+    <view class="cu-dialog">
+      <view class="bg-img" style="background-image: url('https://ossweb-img.qq.com/images/lol/web201310/skin/big91012.jpg');height:660px;">
+      <view class="cu-bar justify-end text-white">
+        <view class="action" bindtap="hideModal">
+          <text class="cuIcon-close "></text>
+        </view>
+      </view>
+      </view>
+    </view>
+  </view>
+
+</view>
