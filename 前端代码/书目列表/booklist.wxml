@@ -1,0 +1,17 @@
+<!--pages/booklist/booklist.wxml-->
+
+<view class='index-search'>
+<image src='/resoures/booktest/list/icon_search@2x.png' class='search-icon'></image>
+    <input placeholder='输入您想要的书名' bindinput='searchChange' confirm-type='search' class='index-search-input'></input>
+    <image src='/resoures/booktest/list/icon_search_bottom@2x.png' bindtap='goSearch' class='search-word'></image>
+</view>
+
+<view class='list'>
+<block wx:for='{{listData}}' wx:key='*this'>
+  <view class="details">
+    <image src="/resoures/booktest/list/cover_picture.png" class="cover_picture"></image>
+    <view class="bookname">《{{item.tit}}》</view>
+    <view class="click_answer" bindtap="goAnswer" data-id="{{item.id}}">{{click}}</view>
+  </view>
+  </block>
+</view>
