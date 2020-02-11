@@ -1,0 +1,21 @@
+<!--pages/contest/contest.wxml-->
+
+<view class="contest_bg"></view>
+<view class="container">
+<navigator url="/pages/contest_info/contest_info" open-type="navigate" >
+<view class="red-bg">
+<view class="tit">第23届福建省新时代好少年主题教育读书活动 —— 知识竞赛</view>
+<view class="goanswer" style="line-height:80rpx">点击开始答题</view>
+</view>
+</navigator>
+<navigator url="/pages/contest_info/contest_info" open-type="navigate" >
+<view class="blue-bg">
+<view class="goanswer">其他竞赛</view>
+</view>
+</navigator>
+<navigator url="/pages/contest_info/contest_info" open-type="navigate" >
+<view class="green-bg">
+<view class="goanswer">其他竞赛</view>
+</view>
+</navigator>
+</view>
