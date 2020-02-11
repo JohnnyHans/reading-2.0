@@ -1,0 +1,16 @@
+<!--pages/booktest/booktest.wxml-->
+
+<view class="bookcatagory">
+<block wx:for="{{cateGory}}" wx:key="*this">
+  <view class="details">
+    <image src="/resoures/icon_index/xindele.jpg" class="titimg"></image>
+    <view class='content'>
+    <view class="content_one">
+    <view class="categoryname">{{item.tit}}</view>
+    <view class="last">{{item.last}}</view>
+    </view>
+    <view class="click" bindtap="goList" data-id="{{item.id}}">{{click}}</view>
+    </view>
+  </view>
+  </block>
+</view>
