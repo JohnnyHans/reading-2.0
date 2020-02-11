@@ -1,0 +1,10 @@
+<!--pages/answerdone/answerdone.wxml-->
+
+<view class="page">
+  <view class="done">答题完毕 </view>
+    <view class="btn">
+    <button class="back" >返回首页 </button>
+    <button class="again">再答一次 </button>
+    </view>
+    <button class="share" open-type="share">分享战绩 </button>
+</view>
